@@ -1,4 +1,6 @@
-# modular-vue-app
+# Modular VueJs Application With Lazy Loading
+
+![Screenshot](https://github.com/AhmedMoosa/basicModularVueJs/raw/master/src/assets/devtools.png)
 
 ## Project setup
 ```
