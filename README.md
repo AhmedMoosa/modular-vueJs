@@ -1,5 +1,7 @@
 # Modular VueJs Application With Lazy Loading
 
+We grouped all posts components inside one module and  one chunk js file . and do the same to todos module
+
 ![Screenshot](https://github.com/AhmedMoosa/basicModularVueJs/raw/master/src/assets/devtools.png)
 
 ## Project setup
