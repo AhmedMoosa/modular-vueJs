@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import TodosRoutes from '../components/todos/TodosRoutes';
-import PostsRoutes from '../components/posts/PostsRoutes';
+import todosRoutes from '../components/todos/todos.routes';
+import postsRoutes from '../components/posts/posts.routes';
 Vue.use(VueRouter);
 
 const routes = [{
@@ -15,8 +15,8 @@ const routes = [{
     name: 'about',
     component: () => import( /* webpackChunkName: "about" */ '../views/About.vue')
   },
-  ...TodosRoutes,
-  ...PostsRoutes
+  ...todosRoutes,
+  ...postsRoutes
 ];
 
 const router = new VueRouter({

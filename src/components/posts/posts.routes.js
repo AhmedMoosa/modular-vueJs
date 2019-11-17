@@ -1,7 +1,7 @@
 import AppRouterView from '../AppRouterView.vue';
 const postsList = () => import( /* webpackChunkName: 'posts-module' */ './pages/PostsList.vue');
 const postsDetails = () => import( /* webpackChunkName: 'posts-module' */ './pages/PostsDetails.vue');
-const routes = [{
+const postsRoutes = [{
     path: '/posts',
     component: AppRouterView,
     children: [{
@@ -15,4 +15,4 @@ const routes = [{
         }
     ]
 }];
-export default routes;
+export default postsRoutes;

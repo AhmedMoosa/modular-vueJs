@@ -13,18 +13,17 @@
 export default {
   data() {
     return {
-      todo: null
     };
   },
-  created() {
-    const id = this.$route.params["id"];
-    if (id) {
-      fetch("https://jsonplaceholder.typicode.com/todos/" + id + "?_limit=5")
-        .then(r => r.json())
-        .then(r => {
-          this.todo = r;
-        });
+  computed:{
+    todo(){
+      const id = this.$route.params["id"];
+      return this.$store.getters.getTodoById(id);
     }
+  }
+  ,
+  created() {
+    
   }
 };
 </script>

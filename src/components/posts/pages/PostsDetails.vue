@@ -16,20 +16,15 @@
 <script>
 export default {
   data() {
-    return {
-      post: null
-    };
+    return {};
   },
-  created() {
-    const id = this.$route.params["id"];
-    if (id) {
-      fetch("https://jsonplaceholder.typicode.com/posts/" + id + "?_limit=5")
-        .then(r => r.json())
-        .then(r => {
-          this.post = r;
-        });
+  computed: {
+    post() {
+      const id = this.$route.params["id"];
+      return this.$store.getters.getPostById(id);
     }
-  }
+  },
+  created() {}
 };
 </script>
 

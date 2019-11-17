@@ -1,7 +1,7 @@
 import AppRouterView from '../AppRouterView.vue';
 const TodosList = () => import( /* webpackChunkName: 'todos-module' */ './pages/TodosList.vue');
 const TodosDetails = () => import( /* webpackChunkName: 'todos-module' */ './pages/TodosDetails.vue');
-const routes = [{
+const todosRoutes = [{
     path: '/todos',
     component: AppRouterView,
     children: [{
@@ -15,4 +15,4 @@ const routes = [{
         }
     ]
 }];
-export default routes;
+export default todosRoutes;
